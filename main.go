@@ -11,7 +11,7 @@ import (
 func main() {
 	port := flag.Int("port", 2020, "port to listen on")
 	origin := flag.String("origin", "http://localhost:7070", "url to proxy to")
-	clearCache := flag.Bool("clearCache", false, "clear cache")
+	clearCache := flag.Bool("clear-cache", false, "clear cache")
 	flag.Parse()
 
 	cache := cache.NewCache()
